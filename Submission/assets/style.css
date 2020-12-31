@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@font-face {
+    font-family: "socialMedia";
+    src: url('Socmed.otf');
+}
+@font-face {
+    font-family: "Logo";
+    src: url('Animal\ Script.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* style untuk keseluruhan page */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* style navigasi */
+nav {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover {
+    text-shadow: 2px 2px 5px black;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 15px;
+}
+
+.logoAtas {
+    margin-top: 5px;
+    margin-right: 40%;
+    font-family: "logo" ;
+    font-weight: bolder;
+    font-size: 24px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+header {
+    display: inline;
+}
+/* style navigasi */
+
+
+/* style konten */
+
+main {
+    overflow: auto;
+}
+
+.pagePicture {
+    background-image: url("image/gambarKopi.jpg"); 
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    padding-bottom: 210px;
+}
+
+.logoDepan{ 
+    font-family: "logo" ;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    text-shadow: 1px 1px 3px #666666;
+    padding-top: 130px;
+}
+
+.tagLine {
+    font-family: 'Quicksand';
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 3px #666666;
+    text-align: center;
+    letter-spacing: 25px;
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 50px;
+}
+
+hr {
+    margin-top: 30px;
+    width: 20%;
+    height: 0.1;
+    background-color: grey;
+}
+
+.About-Us {
+    box-shadow: none;
+    width: 75%;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* styling our product */
+.Our-Product {
+    text-align: center;
+    color: white;
+    background-color: rgb(22, 21, 21);
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.coffeImages img{
+    max-height: 300px;
+    filter: brightness(50%);
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*styling identity */
+
+#identity {
+    width: 400px;
+    margin: 0 auto;   
+}
+
+.profileIdentity {
+    float: right;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.profileIdentity table {
+    margin-top: 10px;
+    margin: auto;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.profileImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#identity hr {
+    width: 60%;
+}
+
+/* styling untuk footer */
+footer {
+    display: flex;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#ourContact {
+    margin: auto;
+    padding: 40px;
+    flex-direction: column;
+}
+
+#instagram {
+    margin-right: 20px;
+    color: white;
+}
+
+#whatsapp {
+    margin-left: 20px;
+    color: white;
+}
+
+.socialMedia {
+    font-family: "socialMedia";
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+#ourContact a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+    nav {
+        flex-direction: column;
+    } 
+
+    .logoAtas {
+        margin: auto;
+        word-spacing: none;
+        padding-top: 20px;
+    }
+    ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .pagePicture {
+        padding-bottom: 50px;
+    }
+
+    .logoDepan {
+        font-size: 3em;
+    }
+
+    .tagLine {
+        letter-spacing: 15px;
+        font-size: 16pt;
+    }    
+}
+
